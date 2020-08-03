@@ -2,8 +2,9 @@
   "name": "jest-another-rpg",
   "version": "1.0.0",
   "description": "Console-based RPG game built using JavaSript, Jest, Object Oriented Programming, and Test Driven Development",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node ./app.js",
     "test": "jest"
   },
   "repository": {
