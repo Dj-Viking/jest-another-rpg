@@ -1,11 +1,11 @@
 const Potion = require('../lib/Potion.js');
 
-// test('Creates a health potion object', () =>{
-//   const potion = new Potion('health');
+test('Creates a health potion object', () =>{
+  const potion = new Potion('health');
 
-//   expect(potion.name).toBe('health');
-//   expect(potion.value).toEqual(expect.any(Number));
-// });
+  expect(potion.name).toBe('health');
+  expect(potion.value).toEqual(expect.any(Number));
+});
 
 
 test('Creates a random potion object', () => {

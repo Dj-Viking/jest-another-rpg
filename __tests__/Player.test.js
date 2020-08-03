@@ -78,6 +78,35 @@ test("subtracts from player's health", () => {
   expect(player.health).toBe(0);
 });
 
+test("Gets player's attack value", () => {
+  const player = new Player('Dave');
+  player.strength = 10;
+
+  expect(player.getAttackValue()).toBeGreaterThanOrEqual(5);
+  expect(player.getAttackValue()).toBeLessThanOrEqual(15);
+});
+
+test('Adds a potion to the inventory', () => {
+  const player = new Player('Dave');
+  const oldCount = player.inventory.length;
+
+  //still using mock potion here, only need to test if
+  // player gets a portion to inventory or not
+  player.addPotion(new Potion());
+
+  expect(player.inventory.length).toBeGreaterThan(oldCount);
+});
+
+test('Uses a potion from inventory', () => {
+  const player = new Player('Dave');
+  player.inventory = [new Potion(), new Potion(), new Potion()];
+  const oldCount = player.inventory.length;
+
+  player.usePotion(1);
+
+  expect(player.inventory.length).toBeLessThan(oldCount);
+})
+
 //to test just one file you can specify in the shell command
 // npm test Potion
 // npm test Player
