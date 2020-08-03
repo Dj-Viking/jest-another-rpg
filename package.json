@@ -1,0 +1,27 @@
+{
+  "name": "jest-another-rpg",
+  "version": "1.0.0",
+  "description": "Console-based RPG game built using JavaSript, Jest, Object Oriented Programming, and Test Driven Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dj-Viking/jest-another-repo.git"
+  },
+  "keywords": [
+    "javascript",
+    "jest",
+    "node"
+  ],
+  "author": "Anders Ackerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dj-Viking/jest-another-repo/issues"
+  },
+  "homepage": "https://github.com/Dj-Viking/jest-another-repo#readme",
+  "dependencies": {
+    "jest": "^26.2.2"
+  }
+}
