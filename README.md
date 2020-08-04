@@ -23,6 +23,8 @@ Once cloned, run the shell command <code>npm install</code>, which will install 
 
 ## Usage
 
+![Image of Application Page](./screenshots/SS1.png)
+![Image of Application Page](./screenshots/SS2.png)
  
 
 ## Testing
